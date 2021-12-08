@@ -1,7 +1,7 @@
 using Formatting
 
 function readNumbers()
-    f = open("input/day01.txt");
+    f = open(joinpath(@__DIR__, "../input/day01.txt"));
     lines = readlines(f)
     numbers = map(x -> parse(Int, x), lines)
     return numbers

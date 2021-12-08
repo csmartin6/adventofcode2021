@@ -6,7 +6,7 @@ function parseLine(line)
 end
 
 function readCommands()
-    f = open("input/day02.txt");
+    f = open(joinpath(@__DIR__, "../input/day02.txt"));
     lines = readlines(f)
     commands = map(line -> parseLine(line), lines)
     return commands
